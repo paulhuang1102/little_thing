@@ -1,0 +1,183 @@
+body
+	margin: 0
+
+.wrap 
+	width: 1000px
+	margin: auto
+	position: relative
+
+.monster-holder 
+	position: absolute
+	z-index: 999
+	width: 200px
+	top: 10px
+	left: 0
+
+.monster
+	border-radius: 38% 38% 10% 10%/85% 85% 10% 10%
+	position: relative
+	background-color: red
+	width: 200px
+	height: 207px
+	div 
+		position: absolute
+
+.left-eye
+	border-radius: 34%
+	left: 22%
+	top: 26%
+	background-color: #FFFFFF
+	height: 50px
+	width: 30px
+
+.left-eye-black	
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	left: 22%
+	top: 30%	
+	background-color: #000000
+	animation-name: left-eye-move
+	animation-duration: 2s
+	animation-iteration-count: infinite
+	animation-timing-function: linear
+    
+.right-eye
+	border-radius: 34%
+	right: 34%
+	top: 26%
+	background-color: #FFFFFF
+	height: 50px
+	width: 30px
+
+.right-eye-black
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	right: 39%
+	top: 30%	
+	background-color: #000000
+	animation-name: right-eye-move
+	animation-duration: 2s
+	animation-iteration-count: infinite
+	animation-timing-function: linear
+
+@keyframes left-eye-move
+	0% 
+		left: 22%
+	50%
+		left: 27%
+	100%
+		left: 22%
+
+
+@keyframes right-eye-move
+	0% 
+		right: 39%
+	50%
+		right: 34%
+	100%
+		right: 39%
+
+.bottom-left
+	bottom: 0
+	left: 19%
+	border-left: 30px solid transparent 
+	border-right: 30px solid transparent 
+	border-bottom: 25px solid skyblue
+
+.bottom-right
+	bottom: 0
+	right: 19%
+	border-left: 30px solid transparent 
+	border-right: 30px solid transparent 
+	border-bottom: 25px solid skyblue
+
+.control 
+	padding-top: 300px
+
+.color-select
+	display: none
+	div
+		width: 20px
+		height: 20px
+		margin-top: 10px
+
+.red 
+	background-color: red 
+
+.blue 
+	background-color: blue
+
+.green 
+	background-color: green
+
+.move-control
+	width: 100px
+	height: 100px
+	margin-top: 40px
+	position: relative
+	i 
+		font-size: 50px
+		position: absolute
+
+.fa.fa-angle-up
+	top: -10px
+	left: 50%
+	transform: translateX(-50%)
+
+.fa.fa-angle-left
+	left: 0
+	top: 50%
+	transform: translateY(-50%)
+
+.fa.fa-angle-right
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+
+.fa.fa-angle-down
+	bottom: -10px
+	left: 50%
+	transform: translateX(-50%)
+
+.path
+	position: absolute
+	background-color: skyblue
+	border: 1px solid gray
+.path-1
+	height: 207px
+	width: 500px
+	top: 10px
+	border-right: none
+
+.path-2
+	height: 206px
+	width: 200px
+	top: 10px
+	left: 500px
+	border-left: none
+	border-bottom: none
+
+.path-3
+	height: 300px
+	width: 199px
+	top: 217px
+	left: 500px
+	border-top: none
+	border-bottom: none
+
+.path-4
+	height: 207px
+	width: 199px
+	left: 500px
+	top: 517px
+	border-top: none
+	border-right: none
+
+.path-5
+	height: 206px
+	width: 300px
+	top: 517px
+	left: 700px
+	border-left: none
